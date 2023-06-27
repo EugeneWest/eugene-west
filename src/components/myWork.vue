@@ -1,11 +1,11 @@
 <template>
 	<div class="work">
 		<div class="title_text" ref="title">WORK</div>
-	 <i class="close-icon fas fa-times"></i>
-	 <p class='content__heading' ref="eugene">Commercials<br>Challenges<br>Tutorials</p>
-	 <div class="work_back" @click="startScroll">SCROLL UP</div>
-	 <div class="work_body" ref="workBody">
-		 <div class="work__cards">
+	<i class="close-icon fas fa-times"></i>
+	<p class='content__heading' ref="eugene">Commercials<br>Challenges<br>Tutorials</p>
+	<div class="work_back" @click="startScroll">SCROLL UP</div>
+	<div class="work_body" ref="workBody">
+		<div class="work__cards">
 			<div 
 				class="work__card"
 				v-for="(workCard) in workCards"
@@ -23,7 +23,7 @@
 				</div>
 		</div>
 		</div>
-	 </div>
+	</div>
 	</div>
 </template>
 
@@ -88,18 +88,18 @@ const cardState = Flip.getState([screenInner, imageInner, textInner]);
 card.classList.toggle('is__flipped');
 
 Flip.from(cardState, {
-				 duration: 3,
-				 absolute: true,
-				 ease: "power1.inOut",
-				 onComlete: () => {
+				duration: 3,
+				absolute: true,
+				ease: "power1.inOut",
+				onComlete: () => {
 gsap.to (img, { duration: 1, ease:"power1.inOut", height: 'fit-content'})
 },
-				 stagger: {
+				stagger: {
 					each: 1,
 					from: 0,
 					ease: "power1.inOut"
-				 }
-			 });
+				}
+			});
 
 gsap.fromTo('.work__card__description', { xPercent: 100 }, {
 	display: 'block' , 
@@ -135,10 +135,10 @@ const cardState = Flip.getState([screenInner, imageInner, textInner]);
 card.classList.toggle('is__flipped');
 
 Flip.from(cardState, {
-				 duration: 3,
-				 absolute: true,
-				 ease: "power1.inOut",
-				 onComplete: () => {
+				duration: 3,
+				absolute: true,
+				ease: "power1.inOut",
+				onComplete: () => {
 					this.$refs.items.forEach ((card) => {
 						if (card !== this.selectedCard) {
 							gsap.to(card, { opacity: 1, duration:1, ease: "power1.inOut" })
@@ -146,8 +146,8 @@ Flip.from(cardState, {
 						});
 					gsap.to('.work_body', { backgroundColor: "white", duration:1, ease: "power1.inOut" });
 					gsap.to('.work_back', { yPercent: 0, display: "flex", duration:1, ease: "power1.inOut" }, ">")
-				 }
-			 });
+				}
+			});
 
 gsap.fromTo('.work__card__description', { xPercent: 0 }, {
 	display: 'none', 

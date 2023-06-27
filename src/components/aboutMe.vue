@@ -1,8 +1,8 @@
 <template>
 	<div class="title_text" ref="title">ABOUT</div>
-	 <i class="close-icon fas fa-times"></i>
-	 <p class='content__heading' ref="eugene">Hi,<br>I'm Eugene West</p>
-	 <div class="me">
+	<i class="close-icon fas fa-times"></i>
+	<p class='content__heading' ref="eugene">Hi,<br>I'm Eugene West</p>
+	<div class="me">
 		<div class="me_1">
 			<p class='about__description'>
 				Low / No-code Engineer with a passion for solving problems and helping others.
@@ -17,8 +17,8 @@
 				As a troubleshooter and consultant, I enjoy collaborating with other developers to find creative solutions to complex challenges.
 			</p>
 		</div>
-	 <img class="photo" src="../assets/me.jpg" alt="Eugene West">
-	 </div>
+	<img class="photo" src="../assets/me.jpg" alt="Eugene West">
+	</div>
 </template>
 
 <script>

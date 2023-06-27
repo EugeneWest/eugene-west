@@ -38,11 +38,11 @@ this.$refs.ball.classList.toggle('white');
 		absolute: true
 	})
  Flip.from(cursorState, {
-	 duration: 0.1,
-	 ease: "power1.inOut",
-	 simple: false,
-	 fade:true,
-	 absolute: true
+	duration: 0.1,
+	ease: "power1.inOut",
+	simple: false,
+	fade:true,
+	absolute: true
  });
 
  gsap.set(this.$refs.ball, { xPercent: -50, yPercent: -50 });
@@ -71,7 +71,7 @@ animateMouse () {
 	const portfolioElement = document.querySelector('.portfolio');
 	const portfolioStyle = window.getComputedStyle(portfolioElement);
 
-		 if(portfolioStyle.transform === 'none') {
+		if(portfolioStyle.transform === 'none') {
 			gsap.set(this.$refs.ball, { xPercent: -50, yPercent: -50 });
 			gsap.set(this.$refs.cursor, { xPercent: -50, yPercent: -50 });
 		
@@ -108,7 +108,7 @@ animateMouse () {
 				this.$refs.ball.classList.add('hidden')
 	}
 	});
-		 }
+		}
 	//end - curson animation//
 }
 
