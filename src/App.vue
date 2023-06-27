@@ -65,9 +65,6 @@
            </div>
          
            <div class='content__group'><myWork /></div>
-  
-           <div class='content__group'>><expMe /></div>
-  
            <div class='content__group'>
                    <i class="close-icon fas fa-times"></i>
              <p class='content__heading'>CONTACT</p>
