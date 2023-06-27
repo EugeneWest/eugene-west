@@ -95,14 +95,12 @@
   import animateMouse from './components/mouseAnimation.vue'
   import aboutMe from './components/aboutMe.vue'
   import myWork from './components/myWork.vue'
-  import expMe from './components/expMe.vue'
   
   export default {
     components: {
       animateMouse,
       aboutMe,
-      myWork,
-      expMe
+      myWork
     },
     data () {
       return {
