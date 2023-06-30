@@ -365,7 +365,7 @@
   :root {
     --background-color: #fff;
     --selection-color: ;
-    --index: calc(1vw+1vh);
+    --index: calc(1vw + 1vh);
   }
   
   @font-face {
@@ -389,10 +389,10 @@
   }
   
   h2, h4, h5 {
-    font-family: FormulaCondensed-Light;
+    font-family: formula;
     letter-spacing: 5px;
     font-weight: 200;
-    font-size: calc(var(--index) * 5);
+    font-size: calc(var(--index) * 3);
     line-height: 1.3;
     color: #000000;
     width: fit-content;

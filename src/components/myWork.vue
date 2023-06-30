@@ -275,7 +275,7 @@ font-size: 20px;
 
 .title_text {
 top: 60px;
-font-size: calc(var(--index) * 10.5);
+font-size: calc(var(--index) * 5);
 font-family: raleway-c;
 font-weight: 900;
 opacity: 15%;
@@ -420,7 +420,7 @@ display: none;
 }
 
 .work__card__title {
-font-size: calc(var(--index) * 2.8);
+font-size: calc(var(--index) * 1.2);
 font-family: FormulaCondensed-Light;
 letter-spacing: 5px;
 font-weight: 300;
